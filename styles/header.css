@@ -1,8 +1,10 @@
 
 .cabecalho{
-    background-color: var(--cor-de-fundo);
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .container{
@@ -20,4 +22,22 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+.lista-menu__titulo{
+    color: var(--laranja);
 }
